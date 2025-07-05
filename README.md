@@ -297,8 +297,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_production_supabase_key
 - **Specialties**: Brand Building, Performance Marketing
 
 ### **Contact Information**
-- **Phone**: 8406842340
-- **Email**: brandelize.com@gmail.com
+- **Phone**: 8406842347
 - **Address**: Main Road, near Indrapuri Chowk, Domino's Pizza, Hazaribagh, Jharkhand, India
 
 ## 🙏 Acknowledgments
