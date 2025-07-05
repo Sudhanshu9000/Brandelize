@@ -1,4 +1,4 @@
-# 🚀 Brandelize - Digital Marketing Platform
+# Brandelize - Digital Marketing Platform
 
 A modern, full-stack digital marketing platform built with Next.js, user authentication, and a comprehensive dashboard for managing marketing campaigns.
 
