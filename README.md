@@ -2,7 +2,9 @@
 
 A modern, full-stack digital marketing platform built with Next.js, user authentication, and a comprehensive dashboard for managing marketing campaigns.
 
-[![Brandelize Homepage](https://www.google.com/imgres?q=brandelize%20group&imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD560BAQF8t0AdxbGjCQ%2Fcompany-logo_200_200%2Fcompany-logo_200_200%2F0%2F1727162806297%3Fe%3D2147483647%26v%3Dbeta%26t%3Dv6DxbQ-iFq2M1D1LJ6OmHcjAfh5WBwY1EsyFBnMVPIg&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fbrandelize&docid=Xy_-suDMu1D7AM&tbnid=WeTG0ZVC00LYNM&vet=12ahUKEwirrIbNz6WOAxUTcfUHHVtJBzwQM3oECBEQAA..i&w=200&h=200&hcb=2&ved=2ahUKEwirrIbNz6WOAxUTcfUHHVtJBzwQM3oECBEQAA)](https://brandelize111.vercel.app/)
+[Brandelize Homepage](https://brandelize111.vercel.app/)
+
+[Demo Video](https://www.loom.com/share/98785b4565a54f1aacbfd283be059e05?sid=0fe90bbb-a721-45c7-972d-c99f4fb0490b)
 
 
 ## ✨ Features
