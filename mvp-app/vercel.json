@@ -1,9 +1,5 @@
 {
   "rewrites": [
-    { "src": "/", "dest": "/" },
-    {
-"src": "/test",
-"dest":"/"
-    }
+    { "source": "/old-path", "destination": "/new-path" }
   ]
 }
