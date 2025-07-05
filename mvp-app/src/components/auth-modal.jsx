@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { PasswordStrength } from "@/components/password-strength"
-// import { supabase } from "@/lib/supabase"
+import { supabase } from "@/lib/supabase"
 import { validateSignupForm, validateLoginForm } from "@/lib/validations"
 import { Mail, Lock, User, Phone, Building, Eye, EyeOff, AlertCircle, CheckCircle } from "lucide-react"
 
