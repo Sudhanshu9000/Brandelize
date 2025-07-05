@@ -11,7 +11,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { PasswordStrength } from "@/components/password-strength"
 import { supabase } from "@/lib/supabase"
 import { validateSignupForm, validateLoginForm } from "@/lib/validations"
-import { Mail, Lock, User, Phone, Building, Eye, EyeOff, AlertCircle, CheckCircle } from "lucide-react"
+import { Mail, Lock, User, Phone, Building, Eye, EyeOff, AlertCircle, CheckCircle, X } from "lucide-react"
 
 export function AuthModal({ isOpen, onClose, onSuccess }) {
   const [activeTab, setActiveTab] = useState("signup")
@@ -81,10 +81,12 @@ export function AuthModal({ isOpen, onClose, onSuccess }) {
       if (error) {
         setAuthError(error.message)
       } else if (data.user) {
-        setAuthSuccess("Account created successfully! Please check your email to verify your account.")
+        setAuthSuccess("Account created successfully! Redirecting to dashboard...")
         setTimeout(() => {
           onSuccess?.(data.user)
           onClose()
+          // Use window.location for reliable redirect
+          window.location.href = "/userData"
         }, 2000)
       }
     } catch (error) {
@@ -121,10 +123,12 @@ export function AuthModal({ isOpen, onClose, onSuccess }) {
       if (error) {
         setAuthError(error.message)
       } else if (data.user) {
-        setAuthSuccess("Login successful! Welcome back.")
+        setAuthSuccess("Login successful! Redirecting to dashboard...")
         setTimeout(() => {
           onSuccess?.(data.user)
           onClose()
+          // Use window.location for reliable redirect
+          window.location.href = "/userData"
         }, 1000)
       }
     } catch (error) {
@@ -139,7 +143,7 @@ export function AuthModal({ isOpen, onClose, onSuccess }) {
       const { error } = await supabase.auth.signInWithOAuth({
         provider,
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: `${window.location.origin}/userData`,
         },
       })
 
@@ -180,8 +184,17 @@ export function AuthModal({ isOpen, onClose, onSuccess }) {
   }
 
   return (
-    <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-md max-h-[90vh] overflow-y-auto">
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="sm:max-w-md max-h-[90vh] overflow-y-auto relative">
+        {/* Close button in the top-right corner */}
+        <button
+          type="button"
+          onClick={onClose}
+          className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 focus:outline-none"
+          aria-label="Close"
+        >
+          <X className="w-5 h-5" />
+        </button>
         <DialogHeader>
           <DialogTitle className="text-center text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
             Welcome to Brandelize

@@ -339,134 +339,150 @@ export default function Dashboard() {
             <p className="text-xl text-gray-600">Ready to grow your business? Contact us today!</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-purple-600 mr-4" />
-                  <div>
-                    <div className="font-semibold">Phone</div>
-                    <div className="text-gray-600">8406842340</div>
+          <div className="flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0">
+            {/* Contact Information */}
+            <div className="md:w-1/2">
+              <div className="bg-purple-50 rounded-xl p-8 h-full flex flex-col justify-between shadow-sm">
+                <h3 className="text-2xl font-semibold mb-6 text-purple-700">Contact Information</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <Phone className="w-6 h-6 text-purple-600 mr-4" />
+                    <div>
+                      <div className="font-semibold">Phone</div>
+                      <div className="text-gray-600">8406842340</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-6 h-6 text-purple-600 mr-4" />
-                  <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-gray-600">brandelize.com@gmail.com</div>
+                  <div className="flex items-center">
+                    <Mail className="w-6 h-6 text-purple-600 mr-4" />
+                    <div>
+                      <div className="font-semibold">Email</div>
+                      <div className="text-gray-600">brandelize.com@gmail.com</div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start">
-                  <MapPin className="w-6 h-6 text-purple-600 mr-4 mt-1" />
-                  <div>
-                    <div className="font-semibold">Address</div>
-                    <div className="text-gray-600">
-                      Main Road, near Indrapuri Chowk,
-                      <br />
-                      Domino&apos;s Pizza, Hazaribagh,
-                      <br />
-                      Jharkhand, India
+                  <div className="flex items-start">
+                    <MapPin className="w-6 h-6 text-purple-600 mr-4 mt-1" />
+                    <div>
+                      <div className="font-semibold">Address</div>
+                      <div className="text-gray-600">
+                        Main Road, near Indrapuri Chowk,
+                        <br />
+                        Domino&apos;s Pizza, Hazaribagh,
+                        <br />
+                        Jharkhand, India
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="mt-8">
-                <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-                <div className="flex space-x-4">
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center hover:bg-purple-200 transition-colors"
-                  >
-                    <Facebook className="w-5 h-5 text-purple-600" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center hover:bg-pink-200 transition-colors"
-                  >
-                    <Instagram className="w-5 h-5 text-pink-600" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5 text-blue-600" />
-                  </Link>
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-sky-100 rounded-full flex items-center justify-center hover:bg-sky-200 transition-colors"
-                  >
-                    <Twitter className="w-5 h-5 text-sky-600" />
-                  </Link>
-                </div>
-                <div className="mt-2 text-sm text-gray-600">
-                  <div>Facebook: @brandelize india</div>
-                  <div>Instagram: @officialbrandelize</div>
-                  <div>LinkedIn: @brandelize india</div>
-                  <div>Twitter: @brandelize57640</div>
+                <div className="mt-8">
+                  <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+                  <div className="flex space-x-4 mb-2">
+                    <Link
+                      href="#"
+                      className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center hover:bg-purple-200 transition-colors"
+                    >
+                      <Facebook className="w-5 h-5 text-purple-600" />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center hover:bg-pink-200 transition-colors"
+                    >
+                      <Instagram className="w-5 h-5 text-pink-600" />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center hover:bg-blue-200 transition-colors"
+                    >
+                      <Linkedin className="w-5 h-5 text-blue-600" />
+                    </Link>
+                    <Link
+                      href="#"
+                      className="w-10 h-10 bg-sky-100 rounded-full flex items-center justify-center hover:bg-sky-200 transition-colors"
+                    >
+                      <Twitter className="w-5 h-5 text-sky-600" />
+                    </Link>
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    <div>Facebook: @brandelize india</div>
+                    <div>Instagram: @officialbrandelize</div>
+                    <div>LinkedIn: @brandelize india</div>
+                    <div>Twitter: @brandelize57640</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Get Free Consultation</CardTitle>
-                <CardDescription>Fill out the form and we&apos;ll get back to you within 24 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Name</label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Email</label>
-                    <input
-                      type="email"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Phone</label>
-                    <input
-                      type="tel"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      placeholder="Your phone number"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Service Interested In</label>
-                    <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
-                      <option>Select a service</option>
-                      <option>Performance Marketing</option>
-                      <option>Branding</option>
-                      <option>AI Marketing</option>
-                      <option>Digital Strategy</option>
-                      <option>SEO</option>
-                      <option>Social Media Marketing</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Message</label>
-                    <textarea
-                      rows={4}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
-                      placeholder="Tell us about your project..."
-                    ></textarea>
-                  </div>
-                  <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                    Send Message
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+            {/* Divider */}
+            {/* <div className="hidden md:flex flex-col justify-center">
+              <div className="w-px h-full bg-gray-200"></div>
+            </div>
+            <div className="flex md:hidden justify-center">
+              <div className="w-full h-px bg-gray-200 my-8"></div>
+            </div> */}
+
+            {/* Get Free Consultation Form */}
+            <div className="md:w-1/2">
+              <Card className="shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-center text-2xl text-purple-700">Get Free Consultation</CardTitle>
+                  <CardDescription className="text-center">
+                    Fill out the form and we&apos;ll get back to you within 24 hours
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form className="space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Name</label>
+                      <input
+                        type="text"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        placeholder="Your full name"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Email</label>
+                      <input
+                        type="email"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Phone</label>
+                      <input
+                        type="tel"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        placeholder="Your phone number"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Service Interested In</label>
+                      <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        <option>Select a service</option>
+                        <option>Performance Marketing</option>
+                        <option>Branding</option>
+                        <option>AI Marketing</option>
+                        <option>Digital Strategy</option>
+                        <option>SEO</option>
+                        <option>Social Media Marketing</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Message</label>
+                      <textarea
+                        rows={4}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+                        placeholder="Tell us about your project..."
+                      ></textarea>
+                    </div>
+                    <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                      Send Message
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -525,7 +541,7 @@ export default function Dashboard() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Brandelize. All rights reserved. Powered by AI.</p>
+            <p>&copy; 2025 Brandelize. All rights reserved.</p>
           </div>
         </div>
       </footer>
